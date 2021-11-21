@@ -3,9 +3,14 @@ let Schema = mongoose.Schema;
 
 let appDataSchema = new Schema(
     {
-        userName: { type: String },
-        userGender: { type: String },
-        userEmail: { type: String }
+        cityFrom: { type: String },
+        cityTo: { type: String },
+        date: { type: String },
+        qty: { type: Number },
+        weight: { type: Number },
+        dimensionsL: { type: Number },
+        dimensionsW: { type: Number },
+        dimensionsH: { type: Number },
     },
     { timestamps: true }
 );
