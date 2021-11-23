@@ -14,7 +14,7 @@ const truckController = require("./src/controllers/truck.controller");
 app.use(cors());
 app.use(express.json());
 
-// app.use(appDataController);
+app.use(appDataController);
 app.use("/company", companyController);
 app.use("/trucks", truckController);
 
